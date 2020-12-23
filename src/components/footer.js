@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class footer extends Component {
     render() {
         return (
-            <div>
+            <div style={{ paddingTop: '12%' }}>
                 <footer class="page-footer teal lighten-2" style={{ textAlign: 'left' }}>
                     <div class="footer-copyright">
                         <div class="container">
@@ -14,7 +14,7 @@ export default class footer extends Component {
                     </div>
                 </footer>
 
-            </div >
+            </div>
         )
     }
 }

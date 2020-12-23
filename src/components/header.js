@@ -4,21 +4,20 @@ export default class header extends Component {
     render() {
         return (
             <React.Fragment>
-                <nav className="nav-wrapper teal" style={navStyle}>
-                    <div className="container">
-                        <div className="row">
-                            <div>
-                                <div className="col s4">
-                                    <a href="/" className="brand-logo" style={titleStyle}>Roster System</a>
-                                </div>
-                                <div className="col s6">
-                                    <ul id="nav-mobile" class="right hide-on-med-and-down col-s4">
-                                        <li><a href="/home">Roster</a></li>
-                                        <li><a href="/newroster">Create</a></li>
-                                        <li><a href="/register">Register</a></li>
-                                        <li><a href="/logout">Logout</a></li>
-                                    </ul>
-                                </div>
+                <nav className="nav-wrapper teal col s12" style={navStyle}>
+
+                    <div className="row">
+                        <div>
+                            <div className="col s6">
+                                <a href="/" className="brand-logo" style={titleStyle}>Roster System</a>
+                            </div>
+                            <div className="col s6">
+                                <ul id="nav-mobile" className="right hide-on-med-and-down">
+                                    <li><a href="/home">Roster</a></li>
+                                    <li><a href="/newroster">Create</a></li>
+                                    <li><a href="/register">Register</a></li>
+                                    <li><a href="/logout">Logout</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -30,12 +29,11 @@ export default class header extends Component {
 }
 
 const navStyle = {
-    fontFamily: 'Quicksand',
     fontWeight: 'bold',
-    display: 'flex',
+    display: 'grid',
     textAlign: 'left'
 }
 const titleStyle = {
-    position: 'relative'
-
+    position: 'relative',
+    paddingLeft: '4%'
 }

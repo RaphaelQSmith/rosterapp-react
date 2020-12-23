@@ -4,20 +4,22 @@ export default class table extends PureComponent {
     render() {
         return (
             <React.Fragment>
-                <div>
-                    <form action="/user/login" method="post">
-                        <div class="col s12">
-                            <input type="email" name="email" class="text col s4 offset-m4" placeholder="Email" required />
-                            <input type="password" name="password" class="text col s4 offset-m4" placeholder="Password" required />
-                        </div>
-                        <div class="col s12">
-                            <button class="btn waves-effect waves-light col s4 offset-m4" type="submit">Login
-                                    <i class="material-icons right">login</i>
-                            </button>
-                        </div>
-                    </form>
+                <div class="wrapper">
+                    <div className="container col s12" style={{ padding: '50px 200px 50px 200px' }}>
+                        <form action="/user/login" method="post">
+                            <div className='col s6'>
+                                <input type="email" name="email" class="text" placeholder="Email" required />
+                                <input type="password" name="password" class="text" placeholder="Password" required />
+                            </div>
+                            <div>
+                                <button class="btn waves-effect waves-light" type="submit">Login
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </React.Fragment>
         )
     }
 }
+
