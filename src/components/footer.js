@@ -4,7 +4,7 @@ export default class footer extends Component {
     render() {
         return (
             <div style={{ paddingTop: '12%' }}>
-                <footer class="page-footer teal lighten-2" style={{ textAlign: 'left' }}>
+                <footer class="page-footer teal lighten-2" style={footerStyle}>
                     <div class="footer-copyright">
                         <div class="container">
                             ©2020 Copyright - Raphael Smith
@@ -17,5 +17,12 @@ export default class footer extends Component {
             </div>
         )
     }
+}
+
+const footerStyle = {
+    position: `absolute`,
+    left:0,
+    bottom:0,
+    right:0
 }
 

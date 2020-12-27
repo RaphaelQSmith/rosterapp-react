@@ -1,13 +1,15 @@
 import './App.css';
 import Header from './components/header'
 import Footer from './components/footer'
-import Table from './components/table'
+import Login from './components/login'
+import Search from './components/search'
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Table />
+      <Login />
+      <Search />
       <Footer />
     </div>
   );
