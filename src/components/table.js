@@ -5,7 +5,7 @@ export default class table extends PureComponent {
         return (
             <React.Fragment>
                 <div class="wrapper">
-                    <div className="container col s12" style={{ padding: '50px 200px 50px 200px' }}>
+                    <div className="container col s12" style={{ padding: '100px 200px 0px 200px' }}>
                         <form action="/user/login" method="post">
                             <div className='col s6'>
                                 <input type="email" name="email" class="text" placeholder="Email" required />
