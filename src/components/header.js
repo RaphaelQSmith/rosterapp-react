@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
 
 export default class header extends Component {
     render() {
@@ -12,11 +13,19 @@ export default class header extends Component {
                                 <a href="/" className="brand-logo" style={titleStyle}>Roster System</a>
                             </div>
                             <div className="col s6">
-                                <ul id="nav-mobile" className="right hide-on-med-and-down">
-                                    <li><a href="/home">Roster</a></li>
-                                    <li><a href="/newroster">Create</a></li>
-                                    <li><a href="/register">Register</a></li>
-                                    <li><a href="/logout">Logout</a></li>
+                                <ul id="nav-mobile" className="hide-on-med-and-down">
+                                    <Link to='/'>
+                                        <li>Roster</li>
+                                    </Link>
+                                    <Link to='/newroster'>
+                                        <li>Create</li>
+                                    </Link>
+                                    <Link to='/createUser'>
+                                        <li>Register</li>
+                                    </Link>
+                                    <Link to='/logout'>
+                                        <li>Logout</li>
+                                    </Link>
                                 </ul>
                             </div>
                         </div>
@@ -37,3 +46,5 @@ const titleStyle = {
     position: 'relative',
     paddingLeft: '4%'
 }
+
+
