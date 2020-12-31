@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class register extends Component {
     render() {
         return (
-                <div class="row">
+                <div class="row" style={{paddingTop: "10%"}}>
                     <form class="col s8" enctype="application/json" action="/user/signup" method="POST" autocomplete="off">
                         <div class="row">
                             <div class="input-field col s12 offset-m3">
