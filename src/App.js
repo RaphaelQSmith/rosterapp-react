@@ -7,12 +7,14 @@ import Table from './components/table'
 import Newroster from './components/newroster'
 import CreateUser from './components/register'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Calendar from './components/calendar';
 
 function App() {
   return (
       <Router>
         <div className="App">
           <Header />
+          <Calendar />
           <Switch>
             <Route path='/' exact component={Login} />
             <Route path='/createUser' component={CreateUser} />
