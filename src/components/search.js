@@ -9,9 +9,6 @@ export default class search extends Component {
                         {/* <input type="hidden" name="user_id" value="{{user_id}}" />
                         <input type="text" name="date" class="datepicker col s3 offset-m6" placeholder="Select a date" />
                         <button class="btn waves-effect waves-light col s3 offset-m6" type="submit">Search</button> */}
-                        
-                        
-                    
                     </form>
                 </div>
         )
